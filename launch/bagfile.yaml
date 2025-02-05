@@ -1,0 +1,7 @@
+launch:
+ - executable:
+     cmd: ros2 bag play bag/unilidar_3d/rosbags/bag_1
+ - node:
+     pkg: lidar_converter
+     exec: lidar_converter
+     name: lidar_converter
