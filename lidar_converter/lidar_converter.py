@@ -3,6 +3,11 @@ from rclpy.node import Node
 from sensor_msgs.msg import PointCloud2
 from sensor_msgs_py.point_cloud2 import read_points
 
+import debugpy
+
+# start debugger
+debugpy.listen(5678)
+
 
 class LidarConverter(Node):
     def __init__(self):
